@@ -1,0 +1,7 @@
+analysis,factor,numerator_df,denominator_df,F_reported,p_reported,sex_label_in_prose,source
+Alpha two-way ANOVA,Attractiveness framing,1,708,126.02,<.001,,"Alexander (2024), Statistical Tests"
+Alpha two-way ANOVA,Vignette,2,708,2.41,.091,,"Alexander (2024), Statistical Tests"
+Alpha two-way ANOVA,Framing by vignette interaction,2,708,9.6,<.001,,"Alexander (2024), Statistical Tests"
+Questionnaire category one-way ANOVA,Category,2,711,62.86,<.001,,"Alexander (2024), Questionnaire Traits"
+Questionnaire category sex-stratified ANOVA,Category,2,159,8.98,<.001,Men,"Alexander (2024), Sex Differences in Questionnaire Scores"
+Questionnaire category sex-stratified ANOVA,Category,2,549,65.18,<.001,Women,"Alexander (2024), Sex Differences in Questionnaire Scores"

@@ -1,0 +1,71 @@
+What Makes a Man Seem "Alpha"? — Reconstructed calculations
+============================================================
+Published inputs are rounded. This is a summary-statistic audit, not raw-data reanalysis.
+
+1. Degrees-of-freedom pattern (compatibility check, not proof of analysis code)
+   Total: 238 respondents × 3 repeated vignettes = 714 scores.
+   Independent-cell 2×3 ANOVA: residual df = 714 − 6 = 708.
+   Independent-category one-way ANOVA: residual df = 714 − 3 = 711.
+   Hypothesized subgroup n=54: df = 3×54 − 3 = 159.
+   Hypothesized subgroup n=184: df = 3×184 − 3 = 549.
+   These exactly match the published error dfs 708, 711, 159, and 549.
+   Alternative analysis choices could share these dfs; original code unavailable.
+
+2. Partial eta-squared calculated from published F and dfs
+   eta_p^2 = F * df_effect / (F * df_effect + df_error)
+   Attractiveness framing: F(1,708)=126.02 -> eta_p^2=0.151099 (≈ 0.151)
+   Vignette: F(2,708)=2.41 -> eta_p^2=0.006762 (≈ 0.007)
+   Framing by vignette interaction: F(2,708)=9.60 -> eta_p^2=0.026403 (≈ 0.026)
+   These are likely partial eta-squared, not an additive variance partition.
+   Their inferential validity depends on whether the repeated measures were modeled correctly.
+
+3. Published alpha-rating framing gaps (attractive minus unattractive)
+   Prosocial: 5.40 - 3.28 = 2.12 points
+   Wealthy playboy: 5.10 - 3.85 = 1.25 points
+   Antisocial: 4.55 - 3.73 = 0.82 points
+
+4. Questionnaire sex-label consistency check
+   Hypothesis being audited: Table 4 group names are correct, text ANOVA group names swapped.
+   Tukey 95% half-width h = q_0.95(k=3, df) * sqrt(MSE / n) (equal-n independent one-way model).
+   Therefore MSE ≈ n*(h/q)^2 and F = n*sum((mean-grand_mean)^2)/(2*MSE).
+   This reconstructs the author-reported independent-observation model, NOT a corrected mixed model.
+   Table-labeled Men: hypothetical n=184, df=549, Tukey q=3.32352;
+      consistent CI half-width ≈ 1.105; implied MSE≈20.3397; F≈65.125.
+   Table-labeled Women: hypothetical n=54, df=159, Tukey q=3.34584;
+      consistent CI half-width ≈ 2.540; implied MSE≈31.1208; F≈8.990.
+   Text labels F(2,159)=8.98 "men" and F(2,549)=65.18 "women" therefore appear swapped.
+   This does NOT independently determine respondents’ sex coding in the original dataset.
+   IMPORTANT additional table issue: Women, Status − Money = 4.54 has CI [1.20, 7.08],
+      whose midpoint is 4.14. This interval is not centered on its reported difference.
+      It is excluded from the equal-width reconstruction (the other two CIs agree).
+
+5. Pooled questionnaire attractiveness mean
+   If Table 4 labels are correct (184 Men, 54 Women): 27.2429.
+   Reversing weights (54 Men, 184 Women): 25.1071.
+   Published plotted pooled mean ≈27.2, consistent with the first assignment.
+   This is circumstantial support for a text-label typo, not independent sex verification.
+
+6. Reported Welch test: money-category sex difference
+   Table means difference = 23.30 − 22.24 = 1.06.
+   t = 1.13; Welch df = 73.59; reconstructed 95% CI ≈ [-0.81, 2.93].
+   Published CI is [-0.81, 5.54]; upper endpoint is inconsistent with estimate/test statistic.
+   Rounded inputs prevent exact recovery of the author’s unrounded interval.
+
+7. Courtright et al. estimates (COPIED from published tables; NOT recomputed meta-analysis)
+   Overall leader emergence: rho=0.360 [0.310,0.420], k=58, N=3546
+   Informal leader emergence: rho=0.450 [0.330,0.580], k=21, N=1038
+   Formal leader emergence: rho=0.330 [0.280,0.380], k=38, N=2522
+   Subjective formal emergence: rho=0.500 [0.380,0.610], k=21, N=360
+   Objective formal emergence: rho=0.300 [0.250,0.360], k=18, N=2180
+   Leadership effectiveness: rho=0.100 [-0.004,0.210], k=3, N=138
+   N refers to rated targets and k to correlations, as tabulated in the paper.
+   Corrected rho is not interchangeable with an uncorrected correlation r.
+   The subjective-vs-objective contrast is reported as Z=2.98 (one-sided p≈.001);
+      a normal two-sided p is ≈.0029, still significant (study-set comparison, not causal).
+
+8. What this package cannot calculate
+   * Repeated-measures/mixed-effects tests, adjusted condition effect, or participant-level CIs.
+   * Within-condition correlations underlying the published pooled r=.90.
+   * Randomization balance, sample exclusions, or sex×condition×vignette tests.
+   * Independent reanalysis of Courtright et al.’s individual study effect sizes.
+   These require raw data or fuller published inputs not available for this audit.

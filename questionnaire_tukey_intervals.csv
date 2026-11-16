@@ -1,0 +1,7 @@
+group_label_in_table,contrast,difference,ci_lower,ci_upper,p_reported,source,data_quality_note
+Men,Money - Attractiveness,-4.84,-5.94,-3.73,<.001,"Alexander (2024), Table 5",
+Men,Status - Attractiveness,-0.39,-1.5,0.71,.683,"Alexander (2024), Table 5",
+Men,Status - Money,4.45,3.34,5.55,<.001,"Alexander (2024), Table 5",
+Women,Money - Attractiveness,-1.98,-4.52,0.56,.158,"Alexander (2024), Table 5",
+Women,Status - Attractiveness,2.56,0.02,5.1,.048,"Alexander (2024), Table 5",
+Women,Status - Money,4.54,1.2,7.08,<.001,"Alexander (2024), Table 5",Published interval midpoint 4.14 does not equal reported difference 4.54; exclude from common-width variance estimate

@@ -1,0 +1,7 @@
+outcome,k_correlations,N_rated_targets,r_uncorrected,rho_corrected,ci_lower,ci_upper,I2_percent,source,note
+Overall leader emergence,58,3546,0.33,0.36,0.31,0.42,61.02,Table 3,Overall outcome
+Informal leader emergence,21,1038,0.4,0.45,0.33,0.58,76.36,Table 5,Context subgroup; not independent of overall
+Formal leader emergence,38,2522,0.31,0.33,0.28,0.38,41.18,Table 5,Context subgroup; not independent of overall
+Subjective formal emergence,21,360,0.48,0.5,0.38,0.61,39.26,Table 6,Subset of formal leader emergence
+Objective formal emergence,18,2180,0.28,0.3,0.25,0.36,44.91,Table 6,Subset of formal leader emergence
+Leadership effectiveness,3,138,,0.1,-0.004,0.21,,"Discussion, p. 41 of accepted manuscript",Different outcome; sparse evidence
